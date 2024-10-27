@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx watch src/main.ts",
-    "build": "npx swc src -d dist"
+    "build": "npx tsc --noEmit src/*.ts && npx swc src -d dist"
   },
   "keywords": [],
   "author": "",
