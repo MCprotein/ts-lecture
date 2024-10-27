@@ -48,7 +48,6 @@ export class Animal implements IAnimal {
     this.age = age;
   }
 
-  // public 메소드
   protected 짖다(몇번: number): void {
     console.log(`${this.name}가 ${몇번}번 짖습니다.`);
   }

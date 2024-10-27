@@ -25,6 +25,10 @@ class 사람 {
     if (!this.애완견) return console.log("애완견이 없습니다.");
     this.애완견?.리얼짖다(3);
   }
+
+  private private함수() {
+    console.log("private");
+  }
 }
 
 const person = new 사람("짱구", 5, "홍대");
