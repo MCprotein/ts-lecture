@@ -34,3 +34,13 @@ swc: 한국인이 만든 타입스크립트 컴파일러
 3. 코드 실행 스크립트 셋팅
 4. 컴파일
    npx swc src -d dist
+
+---
+swc는 type check 기능이 없어서 타입 에러가 있어도 정상적으로 컴파일됨<br>
+따라서 typescript에 포함되어있는 공식 컴파일러인 tsc를 사용하는게 더 좋을수도 있음<br>
+
+1. `npm i -D typescript` 명령어 실행
+2. `tsc --init` 명령어 실행
+3. tsconfig.json 설정을 원하는대로 설정
+  - 참고: https://www.typescriptlang.org/ko/tsconfig/
+4. `tsc` 명령어 실행
